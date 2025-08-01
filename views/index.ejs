@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zeel Bhalodia | Portfolio</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body>
+
+  <%- include('partials/header') %>
+
+    <!--Main -->
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Hello, I’m <span>Zeel Bhalodia</span></h1>
+        <h2>Creative Web Developer</h2>
+        <!--<p> I have hands-on experience gained during an internship in web development and mobile applications...</p> -->
+        <div class="hero-buttons">
+          <a href="https://drive.google.com/file/d/1Yd9fwTU9dvR2RPZzX1WQdJ8DOBz0TwF-/view?usp=sharing"
+            class="btn-primary">View Resume</a>
+          <a href="https://www.linkedin.com/in/zeel-bhalodia/" class="btn-outline">Let's Connect</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="/image/zeel.jpg" alt="Zeel Bhalodia" />
+      </div>
+    </section>
+
+    <!--About -->
+    <section class="about-page">
+      <div class="about-left">
+        <img src="/image/aboutme.jpg" alt="Zeel Bhalodia" />
+      </div>
+      <div class="about-right">
+        <h2>About Me</h2>
+        <p>
+          I am an IT student currently studying at Charusat University. I have hands-on experience gained during an
+          internship in web development and mobile applications. Skilled in multiple programming languages with a good
+          understanding of WordPress. I have worked on projects such as e-commerce platforms and smart ticket booking
+          systems. I thrive in collaborative environments and aim to contribute to innovative solutions.
+        </p>
+      </div>
+    </section>
+
+    <!--Skills -->
+    <section class="skills-page">
+      <div class="skills-left">
+        <h2>My Skills</h2>
+        <div class="skills-list">
+          <span>MySQL</span>
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>Python</span>
+          <span>C</span>
+          <span>C++</span>
+          <span>WordPress</span>
+          <span>GitHub</span>
+          <span>Flutter</span>
+          <span>Firebase</span>
+        </div>
+      </div>
+      <div class="skills-right">
+        <img src="/image/skills.jpg" alt="Skills Illustration" />
+      </div>
+    </section>
+
+    <!-- Project-->
+    <section class="projects-page">
+      <div class="pageheding">
+        <h1 class="section-title">My Projects</h1>
+      </div>
+      <div class="pagecontainer">
+        <div class="project-card">
+          <div class="project-img">
+            <img src="/image/ecom.png" alt="E-Commerce Project">
+          </div>
+          <div class="project-info">
+            <h2>Fashion Finds (E-Commerce Website)</h2>
+            <p>Developed an e-commerce platform using WordPress for fish product ordering, focusing on responsive design and efficient delivery workflow.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">
+            <img src="/image/raffic.png" alt="Traffic Light Management">
+          </div>
+          <div class="project-info">
+            <h2>Traffic Light Management System</h2>
+            <p>Implemented a smart traffic light control system using machine learning. The system analyzes real-time
+              traffic data to dynamically adjust signal timings, improving traffic flow and reducing congestion.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">
+            <img src="/image/metro.png" alt="Metro Ticket App">
+          </div>
+          <div class="project-info">
+            <h2>MetroX (QR Ticket Booking App)</h2>
+            <p>Developed a mobile app using Flutter for booking metro tickets with wallet integration and QR-code-based
+              entry. Designed for fast and secure access to metro stations, enhancing the urban commute experience.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--Contact -->
+    <section class="contact-page" id="contact">
+      <div class="contact-left">
+        <h1>Contact Us</h1>
+        <form action="/contact" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="text" name="phone" placeholder="Phone Number" required />
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <div class="contact-right">
+        <img src="/image/contact.jpg" alt="Contact Illustration" />
+      </div>
+    </section>
+
+
+    <%- include('partials/footer') %>
+
+</body>
+
+</html>

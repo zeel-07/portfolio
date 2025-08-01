@@ -1,0 +1,411 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #c9cba3;
+  color: #472d30;
+  
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #472d30;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffe1a8;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #e26d5c;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 10%;
+  background-color: #723d46;
+  color: #ffe1a8;
+  
+}
+
+.hero-right img {
+  width: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-left {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.hero-left h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  color: #ffe1a8;
+}
+
+.hero-left h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero-left p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #ffe1a8;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Button Styles */
+.btn-primary,
+.btn-outline,
+.btn-highlight {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: #ffe1a8;
+  color: #472d30;
+}
+
+.btn-outline {
+  border: 2px solid #ffe1a8;
+  color: #ffe1a8;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background-color: #ffe1a8;
+  color: #472d30;
+}
+
+.btn-highlight {
+  background-color: #e26d5c;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn-highlight:hover {
+  background-color: #c85d4b;
+}
+
+/* Section Layout */
+section {
+  padding: 100px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Page Containers */
+.about-page,
+.skills-page,
+.resume-page {
+  background-color: #ffe1a8;
+  margin-bottom: 80px;
+  padding: 80px 10%;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+.contact-page {
+  background-color: #ffe1a8; /* Pale yellow background */
+  margin-bottom: 80px;
+  padding: 80px 10%;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Section Layout Parts */
+.about-left,
+.skills-right,
+.resume-left,
+.contact-right {
+  flex: 1;
+}
+
+.about-right,
+.skills-left,
+.resume-right,
+.contact-left {
+  flex: 1;
+}
+
+/* Skills Section */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.skills-list span {
+  background-color: #723d46;
+  color: #ffe1a8;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+input,
+textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+button[type='submit'] {
+  background-color: #723d46;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button[type='submit']:hover {
+  background-color: #5b2f39;
+}
+
+/* Project */
+.project-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+}
+
+.projects-page {
+      padding: 100px 10%;
+      background-color: #ffe1a8;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 5rem;
+  gap: 0.75rem;
+  margin-top: 1rem;
+    }
+.pagecontainer{
+  display: flex;
+}
+
+.project-card{
+  margin: 1rem;
+}
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #5b2f39;
+      margin-bottom: 3rem;
+    }
+
+    .project-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .project-card {
+      background-color: #fff0d6;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 300px;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .project-img img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .project-info {
+      padding-top: 1rem;
+    }
+
+    .project-info h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #264653;
+    }
+
+    .project-info p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    @media (max-width: 992px) {
+      .project-card {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #472d30;
+  color: #fff;
+  padding: 2rem 1rem;
+  font-size: 0.95rem;
+}
+
+footer a {
+  color: #ffe1a8;
+  margin: 0 0.5rem;
+  transition: 0.3s ease;
+}
+
+footer a:hover {
+  color: #e26d5c;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .hero,
+  section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left,
+  .hero-right,
+  .about-left,
+  .about-right,
+  .skills-left,
+  .skills-right,
+  .resume-left,
+  .resume-right,
+  .contact-left,
+  .contact-right {
+    padding: 1rem 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .resume-right,
+  .contact-left {
+    align-items: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
+#about{
+  margin-top: 5rem;
+}
+
+input,
+textarea {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  width: 100%;
+  background-color: #fff0d6; /* Soft background (light from palette) */
+  color: #472d30;           /* Dark text for readability */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #723d46; /* Placeholder color from palette */
+  opacity: 0.8;
+}
+
+.success-message {
+  color: #28a745;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}

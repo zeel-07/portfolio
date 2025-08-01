@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Zeel Bhalodia</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <section class="contact-page">
+    <div class="contact-left">
+      <h2>Contact Me</h2>
+
+      <form action="https://formsubmit.co/zeelbh@gmail.com" method="POST">
+        <!-- Hidden behavior inputs -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="box">
+        <input type="hidden" name="_autoresponse" value="Thank you for contacting me! I’ll get back to you soon.">
+
+        <!-- Visible input fields -->
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="phone" placeholder="Phone Number" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <div class="contact-right">
+      <img src="/image/contact.png" alt="Contact Illustration" />
+    </div>
+  </section>
+
+  <%- include('partials/footer') %>
+</body>
+</html>
+  
